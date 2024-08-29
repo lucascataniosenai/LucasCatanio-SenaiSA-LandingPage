@@ -1,0 +1,381 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.main {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.main p {
+    font-family: Arial, sans-serif;
+    color: #666666;
+    font-size: 12px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 80px;
+}
+
+.user-icon {
+    background-color: #f1f1f1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+.courses {
+    height: 80vh;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0;
+}
+
+.course-card {
+    margin: 20px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.25);
+    width: 300px;
+    padding: 20px;
+    height: 475px;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-out;
+}
+
+.course-card.visible {
+    opacity: 0;
+    transform: translateY(0);
+}
+
+.image-placeholder {
+    background-color: black;
+    color: white;
+    height: auto;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.enroll-button {
+    background-color: #00205b;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.enroll-button:hover {
+    background-color: #45a1d6;
+}
+
+footer {
+    background-color: #00205b;
+    color: white;
+    height: 20vh;
+    text-align: center;
+    padding: 20px 0px;
+    display: flex;
+    align-items: center;
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all 0.5s ease-out;
+
+}
+
+footer .contact-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-media a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+footer .logo {
+    height: 50px;
+    margin: 25px;
+}
+
+footer .icon {
+    height: 48px;
+}
+
+.text-icon {
+    display: flex;
+    align-items: center;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #00205b;
+    padding: 10px 250px;
+}
+
+.navbar .logo {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-left: 20px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.navbar ul li a:hover {
+    color: #ddd;
+}
+
+.linha-azul-40 {
+    background-color: #2029ad;
+    width: 40%;
+}
+
+.linha-amarela-40 {
+    background-color: #f3ff15;
+    width: 40%;
+}
+
+.linha-laranja-20 {
+    background-color: #fb5909;
+    width: 20%;
+}
+
+.linha-flex {
+    width: 100%;
+    display: flex;
+}
+
+
+/*tentando dar um jeito no overflow*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+
+
+@media (max-width: 936px) {
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f9f9f9;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h3 {
+        text-align: center;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px 0px;
+    }
+
+    .container p {
+        padding: 15px;
+    }
+
+    .main {
+        width: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+
+    .main p {
+        font-family: Arial, sans-serif;
+        color: #666666;
+        font-size: 14px;
+        letter-spacing: 0;
+        text-transform: none;
+        font-weight: 400;
+        text-decoration: none;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .user-icon {
+        background-color: #f1f1f1;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+    }
+
+    .courses {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 0;
+    }
+
+    .course-card {
+        background-color: white;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        width: 90%;
+        max-width: 300px;
+        text-align: left;
+        padding: 15px;
+        margin-bottom: 20px;
+        height: auto;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.5s ease-out;
+    }
+
+    .image-placeholder {
+        background-color: black;
+        color: white;
+        height: auto;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .enroll-button {
+        background-color: #00205b;
+        color: white;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+    }
+
+    .enroll-button:hover {
+        background-color: #45a1d6;
+    }
+
+    footer {
+        background-color: #00205b;
+        color: white;
+        height: auto;
+        text-align: center;
+        padding: 20px 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        opacity: 1;
+        transform: translateY(0px);
+        transition: all 0.5s ease-out;
+    }
+
+    footer .contact-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer .social-media a {
+        margin: 10px;
+        color: white;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    footer .logo {
+        height: 50px;
+    }
+
+    footer .icon {
+        height: 48px;
+    }
+
+
+
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #00205b;
+        padding: 10px 20px;
+
+    }
+
+    .navbar .logo {
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+
+    .navbar ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .navbar ul li a:hover {
+        color: #ddd;
+    }
+
+
+    .linha-flex {
+        width: 100%;
+        display: flex;
+    }
+
+}
