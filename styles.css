@@ -19,8 +19,25 @@ h3 {
 
 .main {
     width: 100%;
-    padding: 10px;
     margin: 0 auto;
+}
+
+.p-ourstory{
+    display: flex;
+    padding-left: 50px;
+    padding-right: 50px;
+    justify-content: center;
+    text-align: center;
+}
+
+.div-video{
+    margin: 50px 0px 100px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    justify-self: center;
 }
 
 .main p {
@@ -54,6 +71,7 @@ h3 {
     background-color: white;
     border-radius: 25px;
     box-shadow: 10px 10px 15px 15px rgba(0, 0, 0, 0.25);
+    text-align: left;
     width: 300px;
     padding: 20px;
     height: 475px;
