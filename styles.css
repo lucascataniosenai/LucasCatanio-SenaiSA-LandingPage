@@ -22,7 +22,7 @@ h3 {
     margin: 0 auto;
 }
 
-.p-ourstory{
+.p-ourstory {
     display: flex;
     padding-left: 50px;
     padding-right: 50px;
@@ -30,7 +30,7 @@ h3 {
     text-align: center;
 }
 
-.div-video{
+.div-video {
     margin: 50px 0px 100px 0px;
     display: flex;
     justify-content: center;
@@ -38,9 +38,17 @@ h3 {
 
 video {
     justify-self: center;
+    width: 900px;
+    border-radius: 15px;
 }
 
 .main {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.main-desc {
     width: 100%;
     padding: 10px;
     margin: 0 auto;
@@ -58,6 +66,19 @@ video {
     margin-left: 0;
 }
 
+.main-desc p {
+    font-family: Arial, sans-serif;
+    color: #666666;
+    font-size: 14px;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 400;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 0;
+
+}
+
 .user-icon {
     background-color: #f1f1f1;
     border-radius: 50%;
@@ -69,7 +90,7 @@ video {
     height: auto;
     display: flex;
     justify-content: center;
-    gap: 100px;
+    gap: 50px;
     align-items: center;
     padding: 10px 0;
 }
@@ -83,14 +104,41 @@ video {
     text-align: left;
     padding: 15px;
     margin-bottom: 20px;
-    height: 530px;
+    height: 510px;
     opacity: 1;
     transform: translateY(0px);
     transition: all 0.5s ease-out;
 }
 
-.course-card h3{
+.course-card h3 {
     height: 44px;
+}
+
+.course-desc {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: center;
+    padding: 10px 0;
+
+}
+
+.text-desc {
+    width: 330px;
+    align-content: center;
+}
+
+.text-desc p {
+    text-align: left;
+}
+
+.text-desc h6 {
+    font-size: large;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.6;
+    letter-spacing: 0.0075em;
+    margin-bottom: 5px;
 }
 
 .image-placeholder {
@@ -225,7 +273,7 @@ body {
 
 
 
-@media (max-width: 936px) {
+@media (max-width: 1150px) {
     body {
         font-family: Arial, sans-serif;
         margin: 0;
@@ -298,6 +346,17 @@ body {
         transition: all 0.5s ease-out;
     }
 
+    .course-desc {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+        align-items: center;
+        padding: 10px 0;
+    
+    }
+
     .image-placeholder {
         background-color: black;
         color: white;
@@ -322,6 +381,11 @@ body {
 
     .enroll-button:hover {
         background-color: #45a1d6;
+    }
+
+    video {
+        justify-self: center;
+        width: 400px;
     }
 
     footer {
